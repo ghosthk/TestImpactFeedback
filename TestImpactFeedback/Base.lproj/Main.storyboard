@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestImpactFeedback" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gdl-l3-0Pu">
+                                <rect key="frame" x="118.5" y="225" width="177" height="456.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxk-fh-3ki">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chg-cv-i2i">
+                                        <rect key="frame" x="0.0" y="25.5" width="177" height="30"/>
+                                        <state key="normal" title="NOTIFICATION_SUCCESS"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxU-Ra-Xd1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV9-Zf-B5o">
+                                        <rect key="frame" x="0.0" y="60.5" width="177" height="30"/>
+                                        <state key="normal" title="NOTIFICATION_WARNING"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HwA-IH-g88"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1q-C7-LqQ">
+                                        <rect key="frame" x="0.0" y="95.5" width="177" height="30"/>
+                                        <state key="normal" title="NOTIFICATION_ERROR"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63T-3L-esB"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-mA-C61">
+                                        <rect key="frame" x="0.0" y="130.5" width="177" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sec-4N-fy5">
+                                        <rect key="frame" x="0.0" y="156" width="177" height="30"/>
+                                        <state key="normal" title="IMPACT_LIGHT"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Qv-NE-p3i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiC-PV-aFe">
+                                        <rect key="frame" x="0.0" y="191" width="177" height="30"/>
+                                        <state key="normal" title="IMPACT_MEDIUM"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Awb-zI-VV6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKv-Pz-UR5">
+                                        <rect key="frame" x="0.0" y="226" width="177" height="30"/>
+                                        <state key="normal" title="IMPACT_HEAVY"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hkj-R0-7DQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVA-bW-dvI">
+                                        <rect key="frame" x="0.0" y="261" width="177" height="30"/>
+                                        <state key="normal" title="IMPACT_SOFT"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KsC-tS-ld1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-jT-N9z">
+                                        <rect key="frame" x="0.0" y="296" width="177" height="30"/>
+                                        <state key="normal" title="IMPACT_RIGID"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BS5-fK-WeI"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca2-JU-3OF">
+                                        <rect key="frame" x="0.0" y="331" width="177" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1519" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUQ-od-cAF">
+                                        <rect key="frame" x="0.0" y="356.5" width="177" height="30"/>
+                                        <state key="normal" title="SYSTEM_1519"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vdh-gh-Xvp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1520" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxU-G9-zjk">
+                                        <rect key="frame" x="0.0" y="391.5" width="177" height="30"/>
+                                        <state key="normal" title="SYSTEM_1520"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7uW-hQ-cMu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1521" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcF-cR-Tpv">
+                                        <rect key="frame" x="0.0" y="426.5" width="177" height="30"/>
+                                        <state key="normal" title="SYSTEM_1521"/>
+                                        <connections>
+                                            <action selector="impactBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GxS-nG-xPK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gdl-l3-0Pu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="D0c-ry-f8M"/>
+                            <constraint firstItem="Gdl-l3-0Pu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cun-qR-L4a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="-1"/>
+        </scene>
+    </scenes>
+</document>
